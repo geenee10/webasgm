@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <title>seller Plus</title>
+    <meta charset="UTF-8">
+    <link href="css/style.css" rel="stylesheet" type="text/css">
+    <link href="css/main.css" rel="stylesheet" type="text/css">
+    <script src="script/script.js" type= text/javascript></script>
+</head>
+<body>
+    <header>
+        <div id="maintitle">
+            <p>Main</p>
+        </div>
+        <div id="line">
+
+        </div>
+        <nav id="gnb">
+            <ul id="menutitle">
+                <a href="dashboard.html" target="rm" id="mn"><li class="menut sel" onclick="clk(this), goMain()">대시보드</li></a>
+                <a href="#" id="mn"><li class="menut" onclick="clk(this)">공지사항</li></a>
+                <a href="#" id="mn"><li class="menut" onclick="clk(this)">판매자지원</li></a>
+            </ul>
+            <ul id="menusub">
+                <ul>
+                </ul>
+                <ul>
+
+                </ul>
+                <ul>
+                    <a href=""><li>고객센터</li></a>
+                    <a href="map.html" target="rm" onclick="goMap()"><li>본사위치</li></a>
+                </ul>
+            </ul>
+    </nav>
+    </header>
+    <div id="contents">
+        <iframe id="lm" name="lm" src="menu.html">
+        </iframe>
+        <iframe id="rm" name="rm" src="dashboard.html">
+        </iframe>
+    </div>
+</body>
+<footer>
+    <p>Copyright (C) 2022 Joo Sung Jun all rights reserved.</p>
+</footer>
+</html>
