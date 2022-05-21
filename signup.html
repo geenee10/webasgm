@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <link href="css/style.css" rel="stylesheet" type="text/css">
+    <link href="css/login.css" rel="stylesheet" type="text/css">
+    <link href="css/signup.css" rel="stylesheet" type="text/css">
+    <script src="script/script.js"></script>
+</head>
+<body>
+    <form id="signup">
+        <div id="logo">
+            <a href="login.html"><img src="img/logo_blue.gif" alt="로고"></a>
+        </div>
+        <!-- 아이디입력 영역 -->
+        <div class="su_div f">
+            <label for="su_id">아이디</label>
+        </div>
+        <input type="text" placeholder="아이디" id="su_id" class="big_button ip" required>
+        <!-- 비밀번호입력 영역 -->
+        <div class="su_div">
+            <label for="su_pw">비밀번호</label>
+        </div>
+        <input type="password" placeholder="8글자 이상" id="su_pw" class="big_button ip" required>
+        <!-- 비밀번호 재확인입력 영역 -->
+        <div class="su_div">
+            <label for="su_pwag">비밀번호 재확인</label>
+        </div>
+        <input type="password" placeholder="비밀번호를 다시입력해주세요." id="su_pwag" class="big_button ip" required>
+        <!-- 이름입력 영역 -->
+        <div class="su_div">
+            <label for="su_name">이름</label>
+        </div>
+        <input type="text" placeholder="홍길동" id="su_name" class="big_button ip" required>
+        <!-- 전화번호입력 영역 -->
+        <div class="su_div">
+            <label for="su_pn">전화번호</label>
+        </div>
+        <input type="tel" placeholder="010-0000-0000" id="su_pn" class="big_button ip" maxlength="11" required>
+        <button>인증번호 전송</button>
+        <input type="text" placeholder="인증번호" id="su_vif" class="big_button ip" required>
+        <!-- 이메일입력 영역 -->
+        <div class="su_div">
+            <label for="su_email">이메일</label>
+        </div>
+        <input type="email" placeholder="이메일을 입력해주세요." id="su_email" class="big_button ip" required>
+        <!-- 사업자등록번호입력 영역 -->
+        <div class="su_div">
+            <label for="su_cn">사업자등록번호</label>
+        </div>
+        <div id="CN">
+            <input type="text" placeholder="" id="su_cn" class="big_button ip" maxlength="3" minlength="3s" required>
+            <p class="ub">-</p>
+            <input type="text" placeholder="" id="su_cn" class="big_button ip" maxlength="2" minlength="2" required>
+            <p class="ub">-</p>
+            <input type="text" placeholder="" id="su_cn" class="big_button ip" maxlength="5" minlength="5" required>
+        </div>
+        
+
+
+        <input type="submit" value="입점하기" id="su_signup" class="big_button">
+    </form>
+</body>
+<footer>
+
+</footer>
+</html>

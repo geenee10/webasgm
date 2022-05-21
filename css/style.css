@@ -1,0 +1,21 @@
+@font-face { /*덕온공주체 무료 상업용 라이선스*/
+    font-family: 'DeogonPrincess';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2205@1.0/DeogonPrincess.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+}
+@import url(//fonts.googleapis.com/earlyaccess/notosanskr.css);
+.notosanskr * { 
+ font-family: 'Noto Sans KR', sans-serif;
+}
+*{
+    margin: 0 auto;
+    padding: 0;
+    color: #000;
+    list-style: none;
+    font-family: 'Noto Sans KR';
+}
+a{
+    text-decoration: none;
+    color: inherit;
+}

@@ -1,0 +1,92 @@
+body{
+    background-image: url("../img/login_page_background.png");
+    background-size:120%;
+    display: fixed;
+}
+#login{
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    width: 480px;
+    height: 640px;
+    background-color: #fff;
+    position: fixed;
+    border-radius: 25px;
+    text-align: center;
+}
+#logo{
+    text-align: center;
+    width: 480px;
+    height: 180px;
+ 
+}
+#logo img{
+    margin-top: 45px;
+    width: 150px;
+}
+.big_button{
+    width: 320px;
+    height: 64px;
+    border-radius: 25px;
+    border: none;
+}
+.ip{
+    background-color: rgba(235, 235, 235);
+    font-size: 16px;
+    width: 240px !important;
+    padding: 0px 40px !important;
+    line-height: 80px;
+}
+input:focus{
+    outline: none;
+}
+#login>input:not(#sp_id), #other{
+    margin-top: 16px;
+}
+#sp_login{
+    cursor: pointer;
+    font-size: 20px;
+    background-color: rgba(86, 86, 222);
+    color: #fff;
+    margin-top: 28px !important;
+}
+/* 아이디 저장, 찾기 */
+#other{
+    width: 320px;
+    height: 20px;
+    font-size: 14px;
+}
+.save_id{
+    float: left;
+}
+#s_id{
+    margin-right: 8px;
+}
+
+.find{
+    float: right;
+}
+.find span{
+    float: left;
+}
+.find_id{
+    border-right: 2px solid rgba(86, 86, 222);
+    padding-right: 8px;
+}
+.find_pw{
+    padding-left: 8px;
+}
+/* 회원가입 버튼 */
+#sp_signup{
+    margin-top: 20px !important;
+    cursor: pointer;
+    border: 2px solid rgba(86, 86, 222);
+    background-color: #fff;
+}
+/* 최하단 */
+#foot{
+    width: 320px;
+    height: 100px;
+    line-height: 100px;
+    font-size: 12px;
+}

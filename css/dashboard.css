@@ -1,0 +1,97 @@
+body{
+    margin-top: 40px;
+    margin-left: 40px;
+    overflow: hidden;
+}
+.red{
+    color: red;
+}
+.green{
+    color: green;
+}
+#fline{
+    height: 375px;
+    margin-bottom: 20px;
+}
+.oto{
+    width: 375px;
+    height: 375px;
+    background-color: #fff;
+    border-radius: 25px;
+    float: left;
+    margin-right: 20px;
+}
+.oto_title{
+    width: 375px;
+    height: 96px;
+    line-height: 96px;
+    font-size: 32px;
+    box-sizing: border-box;
+    padding-left: 40px;
+    font-weight: 700;
+}
+.oto_item{
+    width: 375px;
+    height: 64px;
+    line-height: 64px;
+    font-size: 20px;
+    padding-left: 40px;
+    padding-right: 40px;
+    box-sizing: border-box;
+}
+.oto_item:last-child{
+    border: none;
+}
+.oto_item_left{
+    float: left;
+}
+.oto_item_right{
+    float: right;
+    font-size: 32px;
+    font-weight: 700;
+    color: rgba(86, 86, 222);
+}
+.oto3:not(.f){
+    margin-top: 24px;
+}
+.ott{
+    width: 770px;
+    height: 375px;
+    background-color: #fff;
+    border-radius: 25px;
+    float: left;
+    margin-right: 20px;
+}
+.ott .oto_item_right{
+    font-size: 24px;
+}
+.ott .oto_title{
+    width: 770px !important;
+}
+.oto_title>span{
+    font-size:12px;
+    font-weight: 500;
+    color: rgba(200, 200, 200);
+}
+tr{
+    width: 770px;
+    height: 42px;
+    line-height: 42px;
+}
+td{
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap
+}
+.ntc_title{
+    width: 560px;
+    margin-right: 60px;
+    float: left;
+}
+td:not(td[class="ntc_title"]){
+    width: 50px;
+    float: right;
+}
+.mon{
+    float: left;
+}

@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <link href="css/style.css" rel="stylesheet" type="text/css">
+    <link href="css/login.css" rel="stylesheet" type="text/css">
+</head>
+<body>
+    <form id="login">
+        <div id="logo">
+            <a href="#"><img src="img/logo_blue.gif" alt="로고"></a>
+        </div>
+        <label for="sp_id"></label>
+        <input type="text" placeholder="아이디를 입력해주세요." id="sp_id" class="big_button ip">
+        <label for="sp_pw"></label>
+        <input type="password" placeholder="비밀번호를 입력해주세요." id="sp_pw" class="big_button ip">
+        <label for="sp_login"></label>
+        <input type="button" value="로그인" id="sp_login" class="big_button" onclick="location.href='index.html'">
+        <div id="other">
+            <div class="save_id">
+                <label for="s_id">
+                    <input type="radio" id="s_id">아이디 저장
+                </label>
+            </div>
+            <div class="find">
+                <a href=""><span class="find_id">아이디 찾기</span></a>
+                <a href=""><span class="find_pw">비밀번호 찾기</span></a>
+            </div>
+        </div>
+        <input type="button" value="판매자 입점하기" id="sp_signup" class="big_button" onclick="location.href='signup.html'">
+        <p id="foot">Copyright 2022. SungJun Joo all rights reserved.</p>
+    </form>
+</body>
+<footer>
+
+</footer>
+</html>
