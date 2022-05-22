@@ -1,7 +1,7 @@
-var men = window.frames['lm'].document.getElementsByClassName("men")[0];
-var s = window.frames['lm'].document.getElementsByClassName("s");
-var f = window.frames['lm'].document.getElementsByClassName("f");
-var t = window.frames['lm'].document.getElementsByClassName("t");
+const men = window.frames['lm'].document.getElementsByClassName("men");
+const s = window.frames['lm'].document.getElementsByClassName("s");
+const f = window.frames['lm'].document.getElementsByClassName("f");
+const t = window.frames['lm'].document.getElementsByClassName("t");
 
 //상단 메뉴바 선택
 function clk (obj) {
@@ -16,7 +16,7 @@ function goMap (){
     for(var i = 0; i < men.length; i++){
         men[i].classList.remove('sel');
     }
-    window.frames['lm'].document.getElementsByClassName('t').classList.add('sel');
+    t.classList.add('sel');
     document.querySelector('#maintitle p').innerText = "Map";
 }
 //대시보드(홈)로 이동
@@ -39,7 +39,7 @@ function goCanvas (){
     for(var i = 0; i < men.length; i++){
         men[i].classList.remove('sel');
     }
-    window.frames['lm'].document.getElementsByClassName('t').classList.add('sel');
+    t.classList.add('sel');
     document.querySelector('#maintitle p').innerText = "Canvas";
 }
 //Product로 이동
@@ -47,6 +47,6 @@ function goCanvas (){
     for(var i = 0; i < men.length; i++){
         men[i].classList.remove('sel');
     }
-    window.frames['lm'].document.getElementsByClassName('s').classList.add('sel');
+    s.classList.add('sel');
     document.querySelector('#maintitle p').innerText = "Product";
 }
