@@ -8,7 +8,7 @@ function mclk (obj) {
 }
 const mtp = window.parent.document.querySelector('#maintitle p');
 const frm = document.querySelector('#rm');
-const dsh = window.parent.document.querySelector('.menut');
+const dsh = window.parent.document.getElementsByClassName('menut');
 
 //메인으로 이동
 function goMain(){
@@ -16,7 +16,7 @@ function goMain(){
     for(var i = 0; i < dhs.length; i++){
         dsh[i].classList.remove('sel');
     }
-    window.parent.document.querySelector('.dsh').classList.add('sel');
+    dsh.classList.add('sel');
 }
 //상품으로 이동
 function goProduct(){
@@ -24,7 +24,7 @@ function goProduct(){
     for(var i = 0; i < dhs.length; i++){
         dsh[i].classList.remove('sel');
     }
-    window.parent.document.querySelector('.n').classList.add('sel');
+    dsh.classList.add('sel');
 }
 //canvas로 이동
 function goCanvas (){
@@ -32,5 +32,5 @@ function goCanvas (){
     for(var i = 0; i < dhs.length; i++){
         dsh[i].classList.remove('sel');
     }
-    window.parent.document.querySelector('.pa').classList.add('sel');
+    dsh.classList.add('sel');
 }
