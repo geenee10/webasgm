@@ -13,7 +13,7 @@ const dsh = window.parent.document.getElementsByClassName('menut');
 //메인으로 이동
 function goMain(){
     mtp.innerText = "Main";
-    for(var i = 0; i < dhs.length; i++){
+    for(var i = 0; i < dsh.length; i++){
         dsh[i].classList.remove('sel');
     }
     dsh.classList.add('sel');
@@ -21,7 +21,7 @@ function goMain(){
 //상품으로 이동
 function goProduct(){
     mtp.innerText = "Product";
-    for(var i = 0; i < dhs.length; i++){
+    for(var i = 0; i < dsh.length; i++){
         dsh[i].classList.remove('sel');
     }
     dsh.classList.add('sel');
@@ -29,7 +29,7 @@ function goProduct(){
 //canvas로 이동
 function goCanvas (){
     mtp.innerText = "Canvas";
-    for(var i = 0; i < dhs.length; i++){
+    for(var i = 0; i < dsh.length; i++){
         dsh[i].classList.remove('sel');
     }
     dsh.classList.add('sel');
