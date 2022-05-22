@@ -1,4 +1,4 @@
-var dsh = window.parent.document.querySelector('.menut');
+var dsh = window.parent.document.getElementsByClassName('menut');
 
 //좌측 메뉴바 선택
 function mclk (obj) {
