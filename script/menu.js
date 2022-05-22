@@ -1,5 +1,3 @@
-var dsh = window.parent.document.getElementsByClassName('menut');
-
 //좌측 메뉴바 선택
 function mclk (obj) {
     var a = document.getElementsByClassName("men");
@@ -10,6 +8,7 @@ function mclk (obj) {
 }
 const mtp = window.parent.document.querySelector('#maintitle p');
 const frm = document.querySelector('#rm');
+const dsh = window.parent.document.querySelector('.menut');
 
 //메인으로 이동
 function goMain(){

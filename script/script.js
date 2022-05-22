@@ -1,4 +1,4 @@
-var men = window.frames['lm'].document.getElementsByClassName("men");
+var men = window.frames['lm'].document.getElementsByClassName("men")[0];
 var s = window.frames['lm'].document.getElementsByClassName("s");
 var f = window.frames['lm'].document.getElementsByClassName("f");
 var t = window.frames['lm'].document.getElementsByClassName("t");
@@ -24,7 +24,7 @@ function goMain (){
     for(var i = 0; i < men.length; i++){
         men[i].classList.remove('sel');
     }
-    window.frames['lm'].document.getElementsByClassName('f').classList.add('sel');
+    f.classList.add('sel');
     document.querySelector('#maintitle p').innerText = "Main";
 }
 //공지사항으로 이동
