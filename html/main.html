@@ -23,20 +23,20 @@
         </div>
         <nav id="gnb">
             <ul id="menutitle">
-                <a href="dashboard.html" target="rm" id="mn"><li class="menut sel dsh" onclick="clk(this), goMain()">대시보드</li></a>
-                <a href="notice.html" target="rm" id="mn"><li class="menut n" onclick="clk(this), goNotice()">공지사항</li></a>
-                <a href="canvas.html" target="rm" id="mn"><li class="menut pa" onclick="clk(this), goCanvas()">판매자지원</li></a>
+                <a href="dashboard.html" target="rm" id="mn"><li class="menut sel dsh" onclick="clk(), goMain()">대시보드</li></a>
+                <a href="notice.html" target="rm" id="mn"><li class="menut n" onclick="clk(), goNotice()">공지사항</li></a>
+                <a href="canvas.html" target="rm" id="mn"><li class="menut pa" onclick="clk(), goCanvas()">판매자지원</li></a>
             </ul>
             <ul id="menusub">
                 <ul>
-                    <a href="dashboard.html" target="rm"><li onclick="goMain()">메인</li></a>
+                    <a href="dashboard.html" target="rm"><li onclick="clk(), goMain()">메인</li></a>
                 </ul>
                 <ul>
-
+                    <a href="notice.html" target="rm" id="mn"><li onclick="clk(), goNotice()">공지</li></a>
                 </ul>
                 <ul>
-                    <a href="canvas.html" target="rm" onclick="goCanvas()"><li>편의기능</li></a>
-                    <a href="map.html" target="rm" onclick="goMap()"><li>본사위치</li></a>
+                    <a href="canvas.html" target="rm" onclick="clk(), goCanvas()"><li>편의기능</li></a>
+                    <a href="map.html" target="rm" onclick="clk(), goMap()"><li>본사위치</li></a>
                 </ul>
             </ul>
     </nav>

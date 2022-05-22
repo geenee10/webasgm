@@ -4,12 +4,11 @@ const f = window.frames['lm'].document.getElementsByClassName("f");
 const t = window.frames['lm'].document.getElementsByClassName("t");
 
 //상단 메뉴바 선택
-function clk (obj) {
+function clk () {
     var a = document.getElementsByClassName("menut");
     for(var i = 0; i < a.length; i++){
         a[i].classList.remove('sel');
     }
-    obj.classList.add('sel');
 }
 //지도로 이동
 function goMap (){
@@ -18,6 +17,7 @@ function goMap (){
     }
     t.classList.add('sel');
     document.querySelector('#maintitle p').innerText = "Map";
+    document.querySelector(".pa").classList.add('sel');
 }
 //대시보드(홈)로 이동
 function goMain (){
@@ -26,6 +26,7 @@ function goMain (){
     }
     f.classList.add('sel');
     document.querySelector('#maintitle p').innerText = "Main";
+    document.querySelector(".dsh").classList.add('sel');
 }
 //공지사항으로 이동
 function goNotice (){
@@ -33,6 +34,7 @@ function goNotice (){
         men[i].classList.remove('sel');
     }
     document.querySelector('#maintitle p').innerText = "Notice";
+    document.querySelector(".n").classList.add('sel');
 }
 //canvas로 이동
 function goCanvas (){
@@ -41,6 +43,7 @@ function goCanvas (){
     }
     t.classList.add('sel');
     document.querySelector('#maintitle p').innerText = "Canvas";
+    document.querySelector(".pa").classList.add('sel');
 }
 //Product로 이동
 function goCanvas (){
