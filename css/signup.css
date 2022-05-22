@@ -1,12 +1,15 @@
 body{
-    height: 1260px;
+    height: 1250px;
+}
+.ip{
+    border-radius: 15px !important;
 }
 #signup{
     left: 50%;
     top: 80px;
     transform: translate(-50%, 0%);
     width: 480px;
-    height: 1100px;
+    height: 1130px;
     background-color: #fff;
     position: absolute;
     border-radius: 25px;
@@ -33,7 +36,7 @@ button{
     width: 100px;
     height: 64px;
     border: none;
-    border-radius: 25px;
+    border-radius: 15px;
     background-color: rgba(86, 86, 222);
     color: #fff;
     cursor: pointer;
