@@ -1,3 +1,4 @@
+/*기본 설정*/
 body{
     background-color: rgba(230, 230, 230);
 }
@@ -8,6 +9,7 @@ body{
 a:hover{
     color: inherit;
 }
+/*헤더*/
 header{
     background-color: #fff;
     width: 100%;
@@ -25,6 +27,41 @@ header{
     line-height: 120px;
     font-size: 48px;
     font-weight: 700;
+}
+#user{
+    position: absolute;
+    height: 120px;
+    right: 0;
+    font-size: 16px;
+    box-sizing: border-box;
+    padding-right:28px;
+}
+#user>div{
+    float: right;
+}
+.pro{
+    width: 48px;
+    height: 120px;
+    line-height: 120px;
+    box-sizing: border-box;
+    padding-top: 36px;
+    margin: 0;
+}
+.cName{
+    margin-top: 36px;
+    text-align: right;
+    margin-right: 20px;
+}
+.profile{
+    width: 48px;
+    height: 48px;
+    line-height: 64px;
+    background-image: url("../img/user_icon.gif");
+    background-size: 48px;
+    background-repeat: no-repeat;
+    background-position: center;
+    border-radius: 100%;
+    background-color: rgba(230, 230, 230);
 }
 #line{
     position: absolute;
@@ -97,6 +134,8 @@ header{
     animation-name: clk;
     animation-fill-mode: forwards;
 }
+
+
 /* gnb에 hover 했을 때*/
 #gnb:hover #menusub{
     top: 64px;

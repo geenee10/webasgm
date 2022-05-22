@@ -14,3 +14,7 @@ function goMap (){
 function goMain (){
     document.querySelector('#maintitle p').innerText = "Main";
 }
+//공지사항으로 이동
+function goNotice (){
+    document.querySelector('#maintitle p').innerText = "Notice";
+}

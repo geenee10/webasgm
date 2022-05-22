@@ -1,0 +1,59 @@
+.green{
+    color: green;
+}
+.red{
+    color: red;
+}
+figure{
+    position: absolute;
+    left: 40px;
+    top: 40px;
+    background-color: #fff;
+    border-radius: 25px;
+    padding: 30px 40px 40px 40px;
+}
+figcaption{
+    text-align: center;
+    font-size: 36px;
+    font-weight: 600;
+    margin-bottom: 20px;
+}
+table{
+    font-size: 18px;
+    margin: 0;
+}
+th{
+    margin-top: 20px !important;
+    height: 64px;
+    line-height: 64px;
+    font-size: 18px;
+}
+.t{
+    text-align: left;
+}
+td:not(td>a){
+    height: 48px;
+    line-height: 48px;
+    border-bottom: 1px solid rgba(230, 230, 230);
+    text-align: center;
+}
+.first_line, .third_line{
+    width: 50px;
+    text-align: center;
+}
+.second_line{
+    width: 860px;
+    text-align: left;
+}
+ul{
+    width: 30px;
+    margin-top: 20px;
+}
+ul li{
+    width: 30px;
+    height: 30px;
+    line-height: 30px;
+    text-align: center;
+    background-color: rgba(86, 86, 222);
+    color: #fff;
+}
