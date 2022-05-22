@@ -62,6 +62,9 @@ input:focus{
 #s_id{
     margin-right: 8px;
 }
+.ss{
+    color: rgba(86, 86, 222);
+}
 
 .find{
     float: right;
@@ -70,11 +73,13 @@ input:focus{
     float: left;
 }
 .find_id{
-    border-right: 2px solid rgba(86, 86, 222);
+    border-right: 2px solid rgba(150, 150, 150);
     padding-right: 8px;
+    color: rgba(86, 86, 222);
 }
 .find_pw{
     padding-left: 8px;
+    color: rgba(86, 86, 222);
 }
 /* 회원가입 버튼 */
 #sp_signup{
@@ -82,6 +87,8 @@ input:focus{
     cursor: pointer;
     border: 2px solid rgba(86, 86, 222);
     background-color: #fff;
+    font-size: 18px;
+    color: rgba(86, 86, 222);
 }
 /* 최하단 */
 #foot{
