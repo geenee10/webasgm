@@ -18,3 +18,11 @@ function goMain (){
 function goNotice (){
     document.querySelector('#maintitle p').innerText = "Notice";
 }
+//canvas로 이동
+function goCanvas (){
+    document.querySelector('#maintitle p').innerText = "Canvas";
+}
+//Product로 이동
+function goCanvas (){
+    document.querySelector('#maintitle p').innerText = "Product";
+}
