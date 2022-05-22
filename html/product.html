@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <link href="../css/style.css" rel="stylesheet" type="text/css">
+    <link href="../css/product.css" rel="stylesheet" type="text/css">
+    <script src="../script/product.js"></script>
+
+</head>
+<body>
+    <ul id="fline">
+        <div id="order" class="ott">
+            <div class="CRUD">
+                <div class="CRUD_top">
+                    <h3>전체 상품 수: <a href="" class="sel">89</a> 건</h3>
+                    <h3>판매중: <a href="" class="sel">84</a> 건</h3>
+                    <h3>판매중지: <a href="" class="sel">4</a> 건</h3>
+                    <h3>품절: <a href="" class="sel">0</a> 건</h3>
+                    <button class="create" onlick="aa()">상품추가</button>
+                </div>
+                <div class="CRUD_bottom">
+                    <select>
+                        <option>상태변경</option>
+                        <option>판매시작</option>
+                        <option>판매중지</option>
+                    </select>
+                    <button class="create" onlick="aa()">수정저장</button>
+                </div>
+            </div>
+            <!-- 하위 요소 -->
+            <table>
+                <colgroup>
+                    <col class="f">
+                    <col class="s">
+                    <col class="t">
+                    <col class="four">
+                    <col class="v">
+                </colgroup>
+                <thead>
+                    <tr>
+                        <th><input type="checkbox" id="main_checkbox" onclick="cbsel()"></th>
+                        <th>수정</th>
+                        <th>판매상태</th>
+                        <th>상품코드</th>
+                        <th>상품명</th>
+                        <th>가격</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><input type="checkbox" name="cb"></td>
+                        <td><button>수정</button></td>
+                        <td>판매중</td>
+                        <td>00000001</td>
+                        <td>볼펜</td>
+                        <td><input type="text" value="1,000" ></td>
+                    </tr>
+                    <tr>
+                        <td><input type="checkbox" name="cb"></td>
+                        <td><button>수정</button></td>
+                        <td>판매중</td>
+                        <td>00000001</td>
+                        <td>볼펜</td>
+                        <td><input type="text" value="1,000" ></td>
+                    </tr>
+                    <tr>
+                        <td><input type="checkbox" name="cb"></td>
+                        <td><button>수정</button></td>
+                        <td>판매중</td>
+                        <td>00000001</td>
+                        <td>볼펜</td>
+                        <td><input type="text" value="1,000" ></td>
+                    </tr>
+                    <tr>
+                        <td><input type="checkbox" name="cb"></td>
+                        <td><button>수정</button></td>
+                        <td>판매중</td>
+                        <td>00000001</td>
+                        <td>볼펜</td>
+                        <td><input type="text" value="1,000" ></td>
+                    </tr>
+                    <tr>
+                        <td><input type="checkbox" name="cb"></td>
+                        <td><button>수정</button></td>
+                        <td>판매중</td>
+                        <td>00000001</td>
+                        <td>볼펜</td>
+                        <td><input type="text" value="1,000" ></td>
+                    </tr>
+                    <tr>
+                        <td><input type="checkbox" name="cb"></td>
+                        <td><button>수정</button></td>
+                        <td>판매중</td>
+                        <td>00000001</td>
+                        <td>볼펜</td>
+                        <td><input type="text" value="1,000" ></td>
+                    </tr>
+                    <tr>
+                        <td><input type="checkbox" name="cb"></td>
+                        <td><button>수정</button></td>
+                        <td>판매중</td>
+                        <td>00000001</td>
+                        <td>볼펜</td>
+                        <td><input type="text" value="1,000" ></td>
+                    </tr>
+                    <tr>
+                        <td><input type="checkbox" name="cb"></td>
+                        <td><button>수정</button></td>
+                        <td>판매중</td>
+                        <td>00000001</td>
+                        <td>볼펜</td>
+                        <td><input type="text" value="1,000" ></td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </ul>
+    
+</body>
+</html>
