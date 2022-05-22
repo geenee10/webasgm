@@ -16,7 +16,7 @@ function goMain(){
     for(var i = 0; i < dsh.length; i++){
         dsh[i].classList.remove('sel');
     }
-    dsh.classList.add('sel');
+    dsh[0].classList.add('sel');
 }
 //상품으로 이동
 function goProduct(){
@@ -24,7 +24,7 @@ function goProduct(){
     for(var i = 0; i < dsh.length; i++){
         dsh[i].classList.remove('sel');
     }
-    dsh.classList.add('sel');
+    dsh[0].classList.add('sel');
 }
 //canvas로 이동
 function goCanvas (){
@@ -32,5 +32,5 @@ function goCanvas (){
     for(var i = 0; i < dsh.length; i++){
         dsh[i].classList.remove('sel');
     }
-    dsh.classList.add('sel');
+    dsh[2].classList.add('sel');
 }
