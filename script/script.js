@@ -53,3 +53,12 @@ function goCanvas (){
     s.classList.add('sel');
     document.querySelector('#maintitle p').innerText = "Product";
 }
+//Media로 이동
+function goCanvas (){
+    for(var i = 0; i < men.length; i++){
+        men[i].classList.remove('sel');
+    }
+    s.classList.add('sel');
+    document.querySelector('#maintitle p').innerText = "Education";
+}
+console.log(document.getElementById(rm).contentWindow.document.getElementById("logo"));

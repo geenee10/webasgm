@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <link href="../css/style.css" rel="stylesheet" type="text/css">
     <link href="../css/main.css" rel="stylesheet" type="text/css">
-    <script src="../script/script.js" type= text/javascript></script>
+    
 </head>
 <body>
     <header>
@@ -30,13 +30,14 @@
             <ul id="menusub">
                 <ul>
                     <a href="dashboard.html" target="rm"><li onclick="clk(), goMain()">메인</li></a>
+                    <a href="canvas.html" target="rm" onclick="clk(), goMain()"><li>편의기능</li></a>
                 </ul>
                 <ul>
                     <a href="notice.html" target="rm" id="mn"><li onclick="clk(), goNotice()">공지</li></a>
                 </ul>
                 <ul>
-                    <a href="canvas.html" target="rm" onclick="clk(), goCanvas()"><li>편의기능</li></a>
                     <a href="map.html" target="rm" onclick="clk(), goMap()"><li>본사위치</li></a>
+                    <a href="media.html" target="rm" onclick="clk(), goMedia()"><li>교육</li></a>
                 </ul>
             </ul>
     </nav>
@@ -48,6 +49,7 @@
         </iframe>
     </div>
 </body>
+<script src="../script/script.js" type= text/javascript></script>
 <footer>
     <p>Copyright 2022. SungJun Joo all rights reserved.</p>
 </footer>
