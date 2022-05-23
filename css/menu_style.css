@@ -29,11 +29,7 @@ li{
     background-color: rgba(255, 255, 255, 0.25);
     color: white;
 }
-a:focus li{
-    animation-duration: 0.1s;
-    animation-name: clk;
-    animation-fill-mode: forwards;
-}
+
 
 @keyframes clk{
     100% {background-color: #fff}

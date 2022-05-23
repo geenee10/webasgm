@@ -24,6 +24,7 @@ function goProduct(){
     for(var i = 0; i < dsh.length; i++){
         dsh[i].classList.remove('sel');
     }
+    dsh[0].classList.add('sel');
 }
 //canvas로 이동
 function goCanvas (){
@@ -32,4 +33,12 @@ function goCanvas (){
         dsh[i].classList.remove('sel');
     }
     dsh[0].classList.add('sel');
+}
+//게임으로 이동
+function goCanvas (){
+    mtp.innerText = "Canvas";
+    for(var i = 0; i < dsh.length; i++){
+        dsh[i].classList.remove('sel');
+    }
+    dsh[2].classList.add('sel');
 }

@@ -63,6 +63,7 @@ function goProduct (){
     ifd.querySelector(".f").classList.add('sel');
 
     document.querySelector('#maintitle p').innerText = "Product";
+    document.querySelector(".dsh").classList.add('sel');
 }
 //Media로 이동
 function goMedia (){
@@ -73,5 +74,16 @@ function goMedia (){
     ifd.querySelector(".t").classList.add('sel');
 
     document.querySelector('#maintitle p').innerText = "Education";
+    document.querySelector(".pa").classList.add('sel');
+}
+//Game로 이동
+function goMedia (){
+    const ifrm = document.getElementById("lm");
+    const ifw = ifrm.contentWindow;
+    const ifd = ifrm.contentDocument;
+
+    ifd.querySelector(".f").classList.add('sel');
+
+    document.querySelector('#maintitle p').innerText = "Game";
     document.querySelector(".pa").classList.add('sel');
 }

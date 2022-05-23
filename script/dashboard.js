@@ -14,6 +14,7 @@ function goProduct(){
         ifd.getElementsByClassName("men")[i].classList.remove('sel');
     }
     ifd.querySelector(".s").classList.add('sel');
+    dsh[0].classList.add('sel');
     mtp.innerText = "Product";
 }
 //공지사항으로 이동
