@@ -17,6 +17,32 @@ header{
     text-align: center;
     font-size: 80px;
 }
+#menubar{
+    border-radius: 100%;
+    width: 64px;
+    height: 64px;
+    background-color: rgba(230, 230, 230);
+    position: absolute;
+    left: 40px;
+    top: 60px;
+}
+.hb:first-child{
+    margin-top: 15px;
+}
+.hb{
+    width: 36px;
+    height: 6px;
+    background-color: #fff;
+    margin-bottom: 8px;
+}
+#logo img{
+    position: absolute;
+    left: 50%;
+    top: 40px;
+    transform: translate(-50%);
+    width: 140px;
+    display: none;
+}
 #maintitle{
     position: absolute;
     z-index: 2;
@@ -158,8 +184,39 @@ header{
         border-bottom: 3px solid rgba(86, 86, 222)}
 }
 @media screen and (max-width: 1024px){
+    #logo img{
+        display: block;
+    }
+    #maintitle{
+        display: none;
+    }
+    .cName{
+        display: none;
+    }
+    .pro{
+        padding-top: 64px;
+    }
     #lm{
         display: none;
+    }
+    #gnb, #line{
+        display: none;
+    }
+    #rm{
+        width: 100% !important;
+        position: absolute;
+        left: 0 !important;
+    }
+}
+@media screen and (max-width: 810px){
+    #contents{
+        height: 1600px !important;
+    }
+    #rm{
+        width: 100% !important;
+        position: absolute;
+        left: 0 !important;
+        height: 1600px !important;
     }
 }
 #contents{

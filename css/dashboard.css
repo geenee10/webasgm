@@ -95,3 +95,8 @@ td:not(td[class="ntc_title"]){
 .mon{
     float: left;
 }
+@media screen and (max-width: 1024px){
+    .oto{
+        margin-bottom: 20px;
+    }
+}
