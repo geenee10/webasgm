@@ -1,5 +1,5 @@
 body{
-    background-color: rgba(0, 0, 30);
+    background-color: rgba(86, 86, 222);
 }
 #logo{
     text-align: center;
@@ -11,18 +11,21 @@ body{
     width: 124px;
 }
 .sel{
-    background-color: rgba(255, 255, 255, 0.25);
-    color: white;
+    background-color: #fff;
+    color: rgba(86, 86, 222);
 }
 li{
     text-align: center;
     width: 100%;
-    line-height: 100px;
+    line-height: 80px;
     font-size: 24px;
     color: #fff;
-    border-radius: 0px 25px 25px 0px;
+    border-radius: 20px;
+    width: 240px;
+    height: 80px;
+    margin-bottom: 30px;
 }
-#menu a>li:hover{
+#menu a>li:not(.sel):hover{
     background-color: rgba(255, 255, 255, 0.25);
     color: white;
 }
@@ -33,5 +36,5 @@ a:focus li{
 }
 
 @keyframes clk{
-    100% {background-color: rgba(255, 255, 255, 0.25);}
+    100% {background-color: #fff}
 }
