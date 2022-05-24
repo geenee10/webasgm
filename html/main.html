@@ -5,19 +5,30 @@
     <meta charset="UTF-8">
     <link href="../css/style.css" rel="stylesheet" type="text/css">
     <link href="../css/main.css" rel="stylesheet" type="text/css">
-    
 </head>
 <body>
     <header>
-        <a href="javascript:goMenubar()"><div id="menubar">
-            <div class="hb"></div>
-            <div class="hb"></div>
-            <div class="hb"></div>
-        </div></a>
+        <a href="javascript:goMenubar()">
+            <div id="menubar">
+                <div class="hb"></div>
+                <div class="hb"></div>
+                <div class="hb"></div>
+            </div>
+        </a>
         <div id="submenubar">
             <div id="menubar_logo"><img src="../img/logo_blue.gif"></div>
-            <div id="menubg"></div>
+            <ul>
+                <a href="dashboard.html" target="rm"><li onclick="goMain()" class="mfl">대시보드</li></a>
+                <a href="product.html" target="rm"><li onclick="goProduct()" class="msl">상품관리</li></a>
+                <a href="notice.html" target="rm"><li onclick="goNotice()" class="mtl">공지사항</li></a>
+                <a href="map.html" target="rm"><li onclick="goMap()" class="mfol">본사위치</li></a>
+                <a href="media.html" target="rm"><li onclick="goMedia()" class="mfil">교육</li></a>
+                <a href="canvas.html" target="rm"><li onclick="goCanvas()" class="msil">편의기능</li></a>
+                <a href="game.html" target="rm"><li onclick="goGame()" class="msevl">게임</li></a>
+            </ul>
         </div>
+        <div id="menubg" onclick="goBack()"></div>
+
         <div id="logo">
             <a href="dashboard.html" target="rm" onClick="goMain"><img src="../img/logo_blue.gif"></a>
         </div>

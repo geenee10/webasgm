@@ -12,8 +12,17 @@ function clk () {
     }
 }
 function goMenubar (){
-    document.getElementById("submenubar").style.display ="block";
-    document.getElementsByClassName("menubg").style.display ="block";
+    document.getElementById("submenubar").style.width ="80%";
+    document.getElementById("menubg").style.display ="block";
+    document.querySelector("#submenubar img").style.display = "block";
+    document.querySelector("#submenubar ul").style.display = "block";
+}
+
+function goBack(){
+    document.getElementById("submenubar").style.width ="0";
+    document.getElementById("menubg").style.display ="none";
+    document.querySelector("#submenubar img").style.display = "none";
+    document.querySelector("#submenubar ul").style.display = "none";
 }
 //지도로 이동
 function goMap (){
@@ -24,6 +33,7 @@ function goMap (){
     ifd.querySelector(".t").classList.add('sel');
     document.querySelector('#maintitle p').innerText = "Map";
     document.querySelector(".pa").classList.add('sel');
+    document.querySelector(".mfol").classList.add('msel');
 }
 //대시보드(홈)로 이동
 function goMain (){
@@ -35,6 +45,7 @@ function goMain (){
 
     document.querySelector('#maintitle p').innerText = "Main";
     document.querySelector(".dsh").classList.add('sel');
+    document.querySelector(".mfl").classList.add('msel');
 }
 //공지사항으로 이동
 function goNotice (){
@@ -46,6 +57,7 @@ function goNotice (){
 
     document.querySelector('#maintitle p').innerText = "Notice";
     document.querySelector(".n").classList.add('sel');
+    document.querySelector(".mtl").classList.add('msel');
 }
 //canvas로 이동
 function goCanvas (){
@@ -57,6 +69,7 @@ function goCanvas (){
 
     document.querySelector('#maintitle p').innerText = "Canvas";
     document.querySelector(".dsh").classList.add('sel');
+    document.querySelector(".msil").classList.add('msel');
 }
 //Product로 이동
 function goProduct (){
@@ -68,6 +81,7 @@ function goProduct (){
 
     document.querySelector('#maintitle p').innerText = "Product";
     document.querySelector(".dsh").classList.add('sel');
+    document.querySelector(".msl").classList.add('msel');
 }
 //Media로 이동
 function goMedia (){
@@ -79,6 +93,7 @@ function goMedia (){
 
     document.querySelector('#maintitle p').innerText = "Education";
     document.querySelector(".pa").classList.add('sel');
+    document.querySelector(".mfil").classList.add('msel');
 }
 //Game로 이동
 function goMedia (){
@@ -90,4 +105,5 @@ function goMedia (){
 
     document.querySelector('#maintitle p').innerText = "Game";
     document.querySelector(".pa").classList.add('sel');
+    document.querySelector(".msevl").classList.add('msel');
 }
