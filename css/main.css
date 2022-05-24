@@ -25,6 +25,13 @@ header{
     position: absolute;
     left: 40px;
     top: 60px;
+    display: none;
+}
+#menubar_logo{
+    width: 150px;
+}
+#menubar_logo img{
+    width: 150px;
 }
 .hb:first-child{
     margin-top: 15px;
@@ -34,6 +41,21 @@ header{
     height: 6px;
     background-color: #fff;
     margin-bottom: 8px;
+}
+#submenubar{
+    z-index: 5;
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 80%;
+    height: 100vh;
+    background-color: #fff;
+    display: none;
+}
+#menubg{
+    width: 100%;
+    height: 100%;
+    background-color: rgb(0, 0, 0, 0.4);
 }
 #logo img{
     position: absolute;
@@ -139,10 +161,6 @@ header{
     height: 0px;
     overflow: hidden;
 }
-#menusub>ul{
-    width: 240px;
-    height: 64px;
-}
 #menusub li{
     font-size: 16px;
     height: 64px;
@@ -184,6 +202,7 @@ header{
         border-bottom: 3px solid rgba(86, 86, 222)}
 }
 @media screen and (max-width: 1024px){
+
     #logo img{
         display: block;
     }
@@ -193,13 +212,7 @@ header{
     .cName{
         display: none;
     }
-    .pro{
-        padding-top: 64px;
-    }
     #lm{
-        display: none;
-    }
-    #gnb, #line{
         display: none;
     }
     #rm{
@@ -207,8 +220,34 @@ header{
         position: absolute;
         left: 0 !important;
     }
+    #menutitle{
+        margin: 0 !important;   
+    }
+    .menut{
+        width: 33.3% !important;
+
+    }
+    #menusub{
+        left: 0px !important;
+    }
+    #menusub ul{
+        width: 33.3%;
+
+    }
+    #menusub ul:last-child{
+        margin-right: 0;
+    }
+    #menusub li{
+        width: 100% !important;
+    }
+    .pa{
+        margin-right: 0 !important;
+    }
+    #line{
+        display: none;
+    }
 }
-@media screen and (max-width: 810px){
+@media screen and (max-width: 846px){
     #contents{
         height: 1600px !important;
     }
@@ -217,6 +256,18 @@ header{
         position: absolute;
         left: 0 !important;
         height: 1600px !important;
+    }
+    #gnb{
+        display: none;
+    }
+    #gnb{
+        width: 100% !important;
+    }
+    .pro{
+        padding-top: 64px;
+    }
+    #menubar{
+        display: block !important;
     }
 }
 #contents{

@@ -4,10 +4,12 @@
 .red{
     color: red;
 }
+body{
+    padding: 40px;
+}
 figure{
     position: absolute;
-    left: 40px;
-    top: 40px;
+
     background-color: #fff;
     border-radius: 25px;
     padding: 30px 40px 40px 40px;
@@ -56,4 +58,10 @@ ul li{
     text-align: center;
     background-color: rgba(86, 86, 222);
     color: #fff;
+}
+@media screen and (max-width: 1024px){
+    
+    figure{
+        width: 80%;
+    }
 }

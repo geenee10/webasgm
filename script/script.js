@@ -11,6 +11,10 @@ function clk () {
         ifd.getElementsByClassName("men")[i].classList.remove('sel');
     }
 }
+function goMenubar (){
+    document.getElementById("submenubar").style.display ="block";
+    document.getElementsByClassName("menubg").style.display ="block";
+}
 //지도로 이동
 function goMap (){
     const ifrm = document.getElementById("lm");
