@@ -40,5 +40,5 @@ function goCanvas (){
     for(var i = 0; i < dsh.length; i++){
         dsh[i].classList.remove('sel');
     }
-    dsh[2].classList.add('sel');
+    dsh[0].classList.add('sel');
 }
