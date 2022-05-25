@@ -1,7 +1,9 @@
 body{
-    margin-top: 40px;
-    margin-left: 40px;
+
+    box-sizing: border-box;
+    width: 100%;
     overflow: hidden;
+    margin: 0 auto;
 }
 .red{
     color: red;
@@ -11,7 +13,6 @@ body{
 }
 #fline{
     height: 375px;
-    margin-bottom: 20px;
 }
 .oto{
     width: 375px;
@@ -20,6 +21,7 @@ body{
     border-radius: 25px;
     float: left;
     margin-right: 20px;
+    margin-bottom: 20px;
 }
 .oto_title{
     width: 375px;
@@ -61,6 +63,7 @@ body{
     border-radius: 25px;
     float: left;
     margin-right: 20px;
+    margin-bottom: 20px;
 }
 .ott .oto_item_right{
     font-size: 24px;
@@ -95,8 +98,17 @@ td:not(td[class="ntc_title"]){
 .mon{
     float: left;
 }
-@media screen and (max-width: 1024px){
+@media screen and (max-width: 1522px){
     .oto{
+        margin-bottom: 20px;
+    }
+}
+@media screen and (max-width: 806px){
+    .oto{
+        width: 100%;
+        min-width:375px;
+        float: none;
+        margin: 0;
         margin-bottom: 20px;
     }
 }

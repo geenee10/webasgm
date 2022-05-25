@@ -214,7 +214,7 @@ header{
 /* gnb에 hover 했을 때*/
 #gnb:hover #menusub{
     top: 64px;
-    height: 128px;
+    height: 192px;
 }
 #gnb:hover{
     overflow: visible;
@@ -232,7 +232,7 @@ header{
     100% {box-sizing: border-box; /*안쪽 보더라인*/
         border-bottom: 3px solid rgba(86, 86, 222)}
 }
-@media screen and (max-width: 1024px){
+@media screen and (max-width: 1126px){
 
     #logo img{
         display: block;
@@ -246,10 +246,11 @@ header{
     #lm{
         display: none;
     }
+    #lmbg{
+        display: none;
+    }
     #rm{
-        width: 100% !important;
-        position: absolute;
-        left: 0 !important;
+        padding-left: 40px !important;
     }
     #menutitle{
         margin: 0 !important;   
@@ -259,7 +260,7 @@ header{
 
     }
     #menusub{
-        left: 0px !important;
+        left:  0px !important;
     }
     #menusub ul{
         width: 33.3%;
@@ -277,17 +278,12 @@ header{
     #line{
         display: none;
     }
+    footer{
+        padding-left: 0px !important;
+    }
 }
-@media screen and (max-width: 846px){
-    #contents{
-        height: 1600px !important;
-    }
-    #rm{
-        width: 100% !important;
-        position: absolute;
-        left: 0 !important;
-        height: 1600px !important;
-    }
+@media screen and (max-width: 806px){
+
     #gnb{
         display: none;
     }
@@ -302,9 +298,7 @@ header{
     }
 }
 #contents{
-    width: 100%;
-    height: 896px;
-    overflow: hidden;
+
 }
 iframe{
     border: none;
@@ -316,21 +310,36 @@ iframe{
     top: 0;
     position: absolute;
     width: 280px;
-    height: 1080px;
+    height: 100%;
+}
+#lmbg{
+    z-index: 0;
+    position: fixed;
+    width: 280px;
+    left: 0;
+    top: 0;
+    height: 100%;
+    background-color: rgba(86, 86, 222);
+    border-radius: 0 50px 0 0;
 }
 #rm{
     z-index: 0;
-    left: 280px;
-    position:absolute;
-    width: 1620px;
-    height: 896px;
+    box-sizing: border-box;
+    padding-left: 320px;
+    width: 100%;
+    height: 830px;
+    padding-top: 40px;
+    padding-right: 40px;
 }
 footer{
+    position: relative;
     text-align: center;
+    box-sizing: border-box;
     width: 100%;
     height: 84px;
     line-height: 84px;
     background-color: rgba(0, 0, 30);
+    font-size: 1em;
 }
 footer p{
     color: #fff;
