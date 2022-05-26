@@ -5,19 +5,23 @@
     color: red;
 }
 figure{
-
-    position: absolute;
+    float: left;
+    max-width: 860px;   
+    width: 100%;
     background-color: #fff;
     border-radius: 25px;
-    padding: 30px 40px 40px 40px;
+    box-sizing: border-box;
 }
 figcaption{
     text-align: center;
     font-size: 36px;
     font-weight: 600;
-    margin-bottom: 20px;
+    padding-top: 20px;
 }
 table{
+    max-width: 860px;
+    width: 100%;
+    padding: 20px;
     font-size: 18px;
     margin: 0;
 }
@@ -29,9 +33,10 @@ th{
 }
 .t{
     text-align: left;
-    white-space: nowrap;
-    overflow: hidden;
-    text-overflow: ellipsis;
+    padding:0 5px;
+    overflow:hidden;
+    text-overflow:ellipsis;
+    white-space:nowrap;
 }
 td:not(td>a){
     height: 48px;
@@ -40,11 +45,9 @@ td:not(td>a){
     text-align: center;
 }
 .first_line, .third_line{
-    width: 50px;
     text-align: center;
 }
 .second_line{
-    width: 860px;
     text-align: left;
 }
 ul{
