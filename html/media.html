@@ -3,21 +3,29 @@
 <head>
     <meta charset="UTF-8">
     <style>
-        div{
-            width: 600px;
+        body{
             height: 600px;
-            margin-left: 40px;
-            margin-top: 40px;
+ 
+        }
+        #bd{
+            max-width: 600px;
+            max-width: 600px;
+        }
+        #bg{
+            position: relative;
             border: 8px solid #fff !important;
             background-color: #fff;
             border-radius: 25px;
             padding: 0px 40px 40px 40px;
             overflow:hidden;
+            max-width: 600px;
+            max-height: 600px;
         }
-        iframe{
+        video{
             border-radius: 25px;
             width: 100%;
-            height: 70%;
+            height: 100%;
+            z-index: 5;
         }
         p{
             width: 100%;
@@ -25,18 +33,15 @@
             font-size: 20px;
             font-weight: 600;
         }
-        @media screen and (max-width: 800px){
-            div{
-                width: 75vw !important;
-                height: 75vw;
-            }
-        }
+
     </style>
 </head>
 <body>
-    <div style="padding-left: 25px; padding-right: 25px; padding-bottom: 25px">
-        <p>자바스크립트 강의</p>
-        <iframe src="https://www.youtube.com/embed/KF6t61yuPCY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    <div id="bd">
+        <div id="bg" style="padding-left: 25px; padding-right: 25px; padding-bottom: 25px">
+            <p>자바스크립트 강의</p>
+            <video  controls><source src="../img/Source Code - 4733.mp4"></video>
+        </div>
     </div>
 </body>
 </html>

@@ -66,6 +66,8 @@ header{
 }
 #submenubar ul{
     display: none;
+    padding-left: 80px;
+    padding-right: 80px;
 }
 #submenubar li{
     font-size: 18px;
@@ -75,10 +77,9 @@ header{
     border-radius: 25px;
     box-sizing: border-box;
 }
-#submenubar li:hover{
-    background-color: #fff;
-    color: rgba(86, 86, 222);
-    border: 2px solid rgba(86, 86, 222);
+#submenubar li:hover:not(.msel){
+    color: #fff;
+    background-color: rgba(86, 86, 222, 0.2);
 }
 #menubg{
     z-index: 3;

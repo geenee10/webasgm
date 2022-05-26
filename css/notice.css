@@ -4,12 +4,9 @@
 .red{
     color: red;
 }
-body{
-    padding: 40px;
-}
 figure{
-    position: absolute;
 
+    position: absolute;
     background-color: #fff;
     border-radius: 25px;
     padding: 30px 40px 40px 40px;
@@ -32,6 +29,9 @@ th{
 }
 .t{
     text-align: left;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
 }
 td:not(td>a){
     height: 48px;
@@ -59,9 +59,5 @@ ul li{
     background-color: rgba(86, 86, 222);
     color: #fff;
 }
-@media screen and (max-width: 1024px){
-    
-    figure{
-        width: 80%;
-    }
+@media screen and (max-width: 1126px){
 }
