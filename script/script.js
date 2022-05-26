@@ -80,7 +80,7 @@ function goProduct (){
     ifd.querySelector(".f").classList.add('sel');
 
     document.querySelector('#maintitle p').innerText = "Product";
-    document.querySelector(".dsh").classList.add('sel');
+    document.querySelector("x.dsh").classList.add('sel');
     document.querySelector(".msl").classList.add('msel');
 }
 //Media로 이동
@@ -96,7 +96,7 @@ function goMedia (){
     document.querySelector(".mfil").classList.add('msel');
 }
 //Game로 이동
-function goMedia (){
+function goGame (){
     const ifrm = document.getElementById("lm");
     const ifw = ifrm.contentWindow;
     const ifd = ifrm.contentDocument;
