@@ -33,6 +33,7 @@ function goMap (){
     ifd.querySelector(".t").classList.add('sel');
     document.querySelector('#maintitle p').innerText = "Map";
     document.querySelector(".pa").classList.add('sel');
+    document.querySelector("#menubar_logo li").classList.remove('msel');
     document.querySelector(".mfol").classList.add('msel');
 }
 //대시보드(홈)로 이동
@@ -45,6 +46,7 @@ function goMain (){
 
     document.querySelector('#maintitle p').innerText = "Main";
     document.querySelector(".dsh").classList.add('sel');
+    document.querySelector("#menubar_logo li").classList.remove('msel');
     document.querySelector(".mfl").classList.add('msel');
 }
 //공지사항으로 이동
@@ -57,6 +59,7 @@ function goNotice (){
 
     document.querySelector('#maintitle p').innerText = "Notice";
     document.querySelector(".n").classList.add('sel');
+    document.querySelector("#menubar_logo li").classList.remove('msel');
     document.querySelector(".mtl").classList.add('msel');
 }
 //canvas로 이동
@@ -69,6 +72,7 @@ function goCanvas (){
 
     document.querySelector('#maintitle p').innerText = "Canvas";
     document.querySelector(".dsh").classList.add('sel');
+    document.querySelector("#menubar_logo li").classList.remove('msel');
     document.querySelector(".msil").classList.add('msel');
 }
 //Product로 이동
@@ -81,6 +85,7 @@ function goProduct (){
 
     document.querySelector('#maintitle p').innerText = "Product";
     document.querySelector("x.dsh").classList.add('sel');
+    document.querySelector("#menubar_logo li").classList.remove('msel');
     document.querySelector(".msl").classList.add('msel');
 }
 //Media로 이동
@@ -93,6 +98,7 @@ function goMedia (){
 
     document.querySelector('#maintitle p').innerText = "Education";
     document.querySelector(".pa").classList.add('sel');
+    document.querySelector("#menubar_logo li").classList.remove('msel');
     document.querySelector(".mfil").classList.add('msel');
 }
 //Game로 이동
@@ -105,5 +111,6 @@ function goGame (){
 
     document.querySelector('#maintitle p').innerText = "Game";
     document.querySelector(".pa").classList.add('sel');
+    document.querySelector("#menubar_logo li").classList.remove('msel');
     document.querySelector(".msevl").classList.add('msel');
 }
