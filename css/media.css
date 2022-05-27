@@ -2,80 +2,97 @@ body{
     height: 600px;
     -ms-overflow-style: none;
 }
-
 ::-webkit-scrollbar {
     display: none;
+}
+#bg{
+    padding: 20px;
+    box-sizing: border-box;
+    width: 100%;
+    position: absolute;
+    background-color: #fff;
+    border-radius: 25px;
+    max-width: 600px;
+    max-height: 600px;
 }
 li{
     float: left;
     width: 350px;
     height: 350px;
-    border-radius: 25px;
+    max-height: 64px;
+    border-radius: 10px;
     background-color: #fff;
-    margin-right: 20px;
     margin-bottom: 20px;
+    border: 1px solid red;
 }
 li:nth-child(4n){
     margin-left: 0 !important;
 }
-#bg{
-    position: absolute;
-    background-color: #fff;
-    border-radius: 25px;
-    padding: 0px 40px 40px 40px;
-    overflow:hidden;
-    max-width: 600px;
-    max-height: 600px;
-}
+
 video{
-    margin-top: 64px;
+    box-sizing: border-box;
     border-radius: 25px;
     width: 100%;
     height: 100%;
     z-index: 5;
 }
 p{
-    position: absolute;
+    box-sizing: border-box;
+    padding-left: 20px;
     width: 100%;
-    height: 64px;
-    line-height: 64px;
+    height: 44px;
+    line-height: 44px;
     font-size: 20px;
     font-weight: 600;
 }
 #aucon{
+    overflow: hidden;
     width: 100%;
+    height: 100%;
+    max-height: 64px;
     margin-top: 20px;
     display: flex;
     flex-direction: row;
     flex-wrap: nowrap;
-    justify-content: flex-start;
+    justify-content: space-around;
+}
+#ply, #repl, #muvol{
+    width: 20%;
+}
+#auc_pltm{
+    width: 100%;
+    box-sizing: border-box;
+    padding-top: 22px;
+    line-height: 100%;
+}
+#playtime{
+    width: 100%;
+    -webkit-appearance: none;
+	background-color: rgba(230, 230, 230);
 }
 button{
-    width: 84px;
-    height: 56px;
+    width: 100%;
+    height: 100%;
     font-size: 18px;
     border-radius: 10px;
     overflow: hidden;
     margin: 0;
+    background: none;
+}
+#auc_pltm{
+    flex-grow: 3 !important;
 }
 #muvol{
     cursor: pointer;
-    width: 84px;
-    height: 56px;
-    display: flex;
 }
 #vol{
+    position: absolute;
     width: 0px;
-    height: 56px;
     margin: 0;
     transition: 0.3s;
-    display: none;
     cursor: pointer;
+    background-color: rgba(230, 230, 230);
 }
 #muvol:hover > #vol{
     width: 80px;
-    display:block;
-}
-#muvol:hover{
-    width: 180px;
 }
