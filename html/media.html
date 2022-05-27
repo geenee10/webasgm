@@ -56,20 +56,31 @@
     </script>
 </head>
 <body>
-        <div id="bg" style="padding-left: 25px; padding-right: 25px; padding-bottom: 25px">
+        <div id="bg">
             <p>자바스크립트 강의</p>
             <video id="ado"><source src="../img/pado.mp4"></video>
-            <div id="aucon">
-                <button id="play" onclick="pl()" class="material-icons">play_arrow</button>
-                <div id="muvol">
-                    <button id="mute" onclick="mut()"><span id="mi" class="material-icons">
+
+            <ul id="aucon">
+                <li id="ply">
+                    <button id="play" onclick="pl()" class="material-icons">play_arrow</button>
+                </li>
+                <li id="muvol">
+                    <button id="mute" onclick="mut()">
+                        <span id="mi" class="material-icons">
                         volume_up
-                        </span></button>
+                        </span>
+                    </button>
                     <input id="vol" type="range" min="0" max="10" value="10" oninput="vol()">
-                </div>
-                <input id="playtime" type="range" >
-                <button onclick="replay()" class="material-icons">replay</button>
-            </div>
+                </li>
+                
+                <li id="auc_pltm">
+                    <input id="playtime" type="range" value="0">
+                </li>
+                <li id="repl">
+                    <button onclick="replay()" class="material-icons">replay</button>
+                </li>
+            </ul>
+            
         </div>
 </body>
 </html>
