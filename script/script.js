@@ -88,7 +88,7 @@ function goProduct (){
     document.querySelector("#menubar_logo li").classList.remove('msel');
     document.querySelector(".msl").classList.add('msel');
 }
-//Media로 이동
+//Medix`a로 이동
 function goMedia (){
     const ifrm = document.getElementById("lm");
     const ifw = ifrm.contentWindow;

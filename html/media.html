@@ -53,12 +53,23 @@
             audio.play();
             btn.innerHTML = "pause";
         }
+        function gage(){
+            var vbar = document.getElementById("playtime");
+            var audio = document.getElementById("ado");
+            vbar.max = audio.duration;
+            vbar.value = audio.currentTime;
+        }
+        function gMove(){
+            var vbar = document.getElementById("playtime");
+            var audio = document.getElementById("ado");
+            audio.currentTime = vbar.value;
+        }
     </script>
 </head>
 <body>
         <div id="bg">
             <p>자바스크립트 강의</p>
-            <video id="ado"><source src="../img/pado.mp4"></video>
+            <video id="ado" ontimeupdate="gage()"><source src="../img/pado.mp4"></video>
 
             <ul id="aucon">
                 <li id="ply">
@@ -70,11 +81,14 @@
                         volume_up
                         </span>
                     </button>
-                    <input id="vol" type="range" min="0" max="10" value="10" oninput="vol()">
+                    <div id="volbg">
+                        <input id="vol" type="range" min="0" max="10" value="10" oninput="vol()">
+                    </div>
+                    
                 </li>
                 
                 <li id="auc_pltm">
-                    <input id="playtime" type="range" value="0">
+                    <input id="playtime" type="range" value="0" oninput="gMove()">
                 </li>
                 <li id="repl">
                     <button onclick="replay()" class="material-icons">replay</button>
