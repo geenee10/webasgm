@@ -20,11 +20,10 @@ function canvasRem(){
     const ifrm = document.getElementById("rm");
     const ifw = ifrm.contentWindow;
     const ifd = ifrm.contentDocument;
-    if (document.getElementById("rm").src == "canvas.html"){
-
+    if (document.getElementById("maintitle").innerText == "Canvas"){
 
         canvas = ifd.getElementById("canvas");
-	    context = document.getContext("2d");
+	    context = canvas.getContext("2d");
 
 	    
         if(context.getImageData(0, 0, canvas.width, canvas.height).data.some(channel => channel !== 0)){
@@ -98,7 +97,7 @@ function tmSel(ths){
             break;
         case 6 :
             var x = document.querySelector(".msil");
-            var y = document.querySelector(".pa");
+            var y = document.querySelector(".n");
             break;
         case 7 :
             var x = document.querySelector(".msevl");
@@ -123,43 +122,49 @@ function goBack(){
 }
 //지도로 이동
 function goMap (){
+    canvasRem()
     lmSel(3);
     upText("Map");
     tmSel(4);
-    canvasRem()
 }
 //대시보드(홈)로 이동
 function goMain (){
+    canvasRem()
     lmSel(1);
     upText("Main");
     tmSel(1);
 }
 //공지사항으로 이동
 function goNotice (){
+    canvasRem()
     lmSel(1);
     upText("Notice");
     tmSel(3);
 }
 //canvas로 이동
 function goCanvas (){
+    canvasRem()
     lmSel(3);
     upText("Canvas");
     tmSel(6);
 }
 //Product로 이동
 function goProduct (){
+    canvasRem()
     lmSel(2);
     upText("Product");
     tmSel(2);
 }
 //Media로 이동
 function goMedia (){
+    canvasRem()
     lmSel();
     upText("Education");
     tmSel(5);
 }
 //Game로 이동
 function goGame (){
+    canvasRem()
     lmSel();
     upText("Game");
     tmSel(7);
