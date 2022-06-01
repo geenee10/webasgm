@@ -50,11 +50,11 @@ body{
 #canvas{
     width: 100%;
     height: 100%;
-    background-color: rgb(230,230,230);
+    background-color: rgba(86, 86, 222);
     border-radius: 25px;
     box-sizing: border-box;
 }
-#ctrl, #rem{
+#ctrl, #rem, #write{
     padding: 20px;
     position: absolute;
     left: 620px;
@@ -65,19 +65,22 @@ body{
 #ctrl h2, #ctrl button{
     float: left;
 }
-#ctrl button{
-    margin-left: 20px;
-    margin-top: 20px;
-    width: 64px;
-    height: 32px;
+button{
+    width: 80px;
+    height: 36px;
     font-size: 16px;
     font-weight: 600;
     cursor: pointer;
     background-color: rgba(86, 86, 222);
     color: #fff;
     border: none;
+    border-radius: 10px;
 }
-#ctrl button:active{
+#ctrl > button{
+    margin-left: 20px;
+    margin-top: 20px;
+}
+button:active{
     background-color: rgba(86, 86, 222, 0.5);
 }
 .bg{
@@ -87,13 +90,45 @@ body{
     font-size: 16px;
     font-weight: 600;
 }
-#ctrl div{
+#ctrl > div{
     width: 100%;
     height: 84px;
-    border-bottom: 2px solid rgba(86, 86, 222)
+    border-bottom: 2px solid rgba(86, 86, 222);
 }
+.pw input{
+    width: 64px;
+}
+.clrbtn{
+    width: 100%;
+    height: 60px;
+}
+.clr{
+    height: 120px !important;
+}
+
+.clr button{
+    margin-top: 12px;
+    margin-left: 35px;
+    margin-right: 35px;
+}
+.shch{
+    box-sizing: border-box;
+    width: 150px;
+    height: 64px;
+    line-height: 64px;
+    font-weight: 600 !important;
+}
+#shch{
+    margin-top: 20px;
+}
+input[type="checkbox"]{
+    float: right;
+    width: 24px;
+    height: 24px;
+}
+/*기록*/
 #rem{
-    left: 830px;
+    left: 1040px;
 }
 .sel{
     background-color: rgba(86, 86, 222);
@@ -113,4 +148,31 @@ body{
     font-size: 16px;
     font-weight: 600;
     line-height: 48px;
+}
+#sh{
+    float: right;
+}
+/*도형 그리기*/
+#write{
+    left: 830px;
+}
+#write>div{
+    margin-top: 20px;
+    height: 32px;
+    border-bottom: 2px solid rgba(86, 86, 222);
+}
+.sc, .sb{
+    height: 84px !important;
+}
+#write input{
+    float: right;
+}
+#write input[type="number"]{
+    width: 40px;
+}
+.draw{
+    border: none !important;
+}
+.draw button{
+    margin: 0;
 }

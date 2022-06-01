@@ -9,7 +9,7 @@
     <div id="maincanvas">
             <p class="selnot">셀러 노트 <span style="font-size:12px; color: rgba(86, 86, 222)">?</span></p>
             <p class="hint">
-                <span style="font-size: 18px; font-weight: 600;">셀러노트 사용 방법</span><br><br>
+                <span style="font-size: 18px; font-weight: 600;">셀러노트 사용 목적</span><br><br>
                 1. 고객과 전화 상담 중 적어둘 곳이 필요할 때<br><br>
                 2. 급하게 무언가 메모해야할 때<br><br>
                 3. 무언가 간단히 그려볼 때<br>
@@ -22,11 +22,70 @@
         <button>저장</button>
         <div class="bg">
             <p>배경 설정</p>
-            <input id="bgc" type="color" value="#e6e6e6" onchange="changeBg()">
+            <input id="bgc" type="color" value="#5656de" onchange="changeBg()">
         </div>
         <div class="pc">
             <p>펜색 변경</p>
             <input id="pc" type="color" value="#ffffff" onchange="changePc()">
+        </div>
+        <div class="pw">
+            <p>펜 두께 변경</p>
+            <input id="pw" type="number" value="2" onchange="changePw()">
+        </div>
+        <div class="clr">
+            <div class="shch">
+                <label for="shch">도형 그리기
+                <input id="shch" type="checkbox">
+            </div>
+            <div class="clrbtn">
+                <button onclick="clr()">지우기</button>
+            </div>
+        </label>
+        </div>
+    </div>
+    <div id="write">
+        <h2>도형 그리기</h2>
+        <div class="x">
+            <label for="x"><b>X 좌표값</b></label>
+            <input id="x" type="number" value="0" min="0">
+        </div>
+        <div class="y">
+            <label for="y"><b>Y 좌표값</b></label>
+            <input id="y" type="number" value="0" min="0">
+        </div>
+        <div class="w">
+            <label for="w"><b>길이</b></label>
+            <input id="w" type="number" value="100" min="0">
+        </div>
+        <div class="h">
+            <label for="h"><b>높이</b></label>
+            <input id="h" type="number" value="100" min="0">
+        </div>
+        <div class="sc">
+            <label for="sc"><b>도형 색상</b></label>
+            <input id="sc" type="color" value="#ffffff"><br><br>
+            <label for="scch">적용 여부</label>
+            <input id="scch" type="checkbox">
+        </div>
+        <div class="sb">
+            <label for="sb"><b>선 색상</b></label>
+            <input id="sb" type="color" value="#ffffff"><br><br>
+            <label for="sbch">적용 여부</label>
+            <input id="sbch" type="checkbox">
+        </div>
+        <div class="sls">
+            <label for="sls"><b>선 두께</b></label>
+            <input id="sls" type="number" value="1" min="0">
+        </div>
+        <div class="sh">
+            <label for="sh"><b>도형 모양</b></label>
+            <select id="sh">
+                <option value="rect">사각형</option>
+                <option value="arc">원</option>
+            </select>
+        </div>
+        <div class="draw">
+            <button onclick="drawShape()">그리기</button>
         </div>
     </div>
     <div id="rem">
@@ -38,11 +97,12 @@
             <p class="re">2번<span style="font-size: 12px; color:rgba(200, 200, 200)">22.02.21</span></p>
         </div>
     </div>
+    
     <script src="../script/canvas.js"></script>
 </body>
 <script>
     function sel(ths){
-        var x = document.getElementsByClassName("re");
+        var x = document.getElementsByClassName("rec");
         for(var i = 0; i < x.length; i++){
             x[i].classList.remove('sel');
         }
