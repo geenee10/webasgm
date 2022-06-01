@@ -11,6 +11,56 @@ function clk () {
         ifd.getElementsByClassName("men")[i].classList.remove('sel');
     }
 }
+//페이지 텍스트 수정 함수
+function upText(ths){
+    document.querySelector('#maintitle p').innerText = ths;
+}
+//좌측메뉴선택 함수
+function lmSel(ths){
+    const ifrm = document.getElementById("lm");
+    const ifw = ifrm.contentWindow;
+    const ifd = ifrm.contentDocument;
+    
+    switch(ths){
+        case 1 :
+            ifd.querySelector(".f").classList.add('sel');
+            break;
+        case 2 :
+            ifd.querySelector(".s").classList.add('sel');
+            break;
+        case 3 :
+            ifd.querySelector(".t").classList.add('sel');
+            break;
+        default :
+    }
+    
+}
+//상단메뉴(상위) 선택 함수
+function tmSel(ths){
+    switch(ths){
+        case 1 :
+            document.querySelector(".mfl").classList.add('msel');
+            break;
+        case 2 :
+            document.querySelector(".msl").classList.add('msel');
+            break;
+        case 3 :
+            document.querySelector(".mtl").classList.add('msel');
+            break;
+        case 4 :
+            document.querySelector(".mfol").classList.add('msel');
+            break;
+        case 5 :
+            document.querySelector(".mfil").classList.add('msel');
+            break;
+        case 6 :
+            document.querySelector(".msil").classList.add('msel');
+            break;
+        case 7 :
+            document.querySelector(".msevl").classList.add('msel');
+            break;
+    }
+}
 function goMenubar (){
     document.getElementById("submenubar").style.width ="80%";
     document.getElementById("menubg").style.display ="block";
@@ -26,90 +76,56 @@ function goBack(){
 }
 //지도로 이동
 function goMap (){
-    const ifrm = document.getElementById("lm");
-    const ifw = ifrm.contentWindow;
-    const ifd = ifrm.contentDocument;
-    
-    ifd.querySelector(".t").classList.add('sel');
-    document.querySelector('#maintitle p').innerText = "Map";
+    lmSel(3);
+    upText("Map");
     document.querySelector(".pa").classList.add('sel');
     document.querySelector("#menubar_logo li").classList.remove('msel');
-    document.querySelector(".mfol").classList.add('msel');
+    tmSel(3);
 }
 //대시보드(홈)로 이동
 function goMain (){
-    const ifrm = document.getElementById("lm");
-    const ifw = ifrm.contentWindow;
-    const ifd = ifrm.contentDocument;
-
-    ifd.querySelector(".f").classList.add('sel');
-
-    document.querySelector('#maintitle p').innerText = "Main";
+    lmSel(1);
+    upText("Main");
     document.querySelector(".dsh").classList.add('sel');
     document.querySelector("#menubar_logo li").classList.remove('msel');
     document.querySelector(".mfl").classList.add('msel');
 }
 //공지사항으로 이동
 function goNotice (){
-    const ifrm = document.getElementById("lm");
-    const ifw = ifrm.contentWindow;
-    const ifd = ifrm.contentDocument;
-
-    ifd.querySelector(".f").classList.add('sel');
-
-    document.querySelector('#maintitle p').innerText = "Notice";
+    lmSel(1);
+    upText("Notice");
     document.querySelector(".n").classList.add('sel');
     document.querySelector("#menubar_logo li").classList.remove('msel');
     document.querySelector(".mtl").classList.add('msel');
 }
 //canvas로 이동
 function goCanvas (){
-    const ifrm = document.getElementById("lm");
-    const ifw = ifrm.contentWindow;
-    const ifd = ifrm.contentDocument;
-
-    ifd.querySelector(".f").classList.add('sel');
-
-    document.querySelector('#maintitle p').innerText = "Canvas";
+    lmSel(3);
+    upText("Canvas");
     document.querySelector(".dsh").classList.add('sel');
     document.querySelector("#menubar_logo li").classList.remove('msel');
     document.querySelector(".msil").classList.add('msel');
 }
 //Product로 이동
 function goProduct (){
-    const ifrm = document.getElementById("lm");
-    const ifw = ifrm.contentWindow;
-    const ifd = ifrm.contentDocument;
-
-    ifd.querySelector(".f").classList.add('sel');
-
-    document.querySelector('#maintitle p').innerText = "Product";
+    lmSel(2);
+    upText("Product");
     document.querySelector("x.dsh").classList.add('sel');
     document.querySelector("#menubar_logo li").classList.remove('msel');
     document.querySelector(".msl").classList.add('msel');
 }
-//Medix`a로 이동
+//Media로 이동
 function goMedia (){
-    const ifrm = document.getElementById("lm");
-    const ifw = ifrm.contentWindow;
-    const ifd = ifrm.contentDocument;
-
-    ifd.querySelector(".t").classList.add('sel');
-
-    document.querySelector('#maintitle p').innerText = "Education";
+    lmSel();
+    upText("Education");
     document.querySelector(".pa").classList.add('sel');
     document.querySelector("#menubar_logo li").classList.remove('msel');
     document.querySelector(".mfil").classList.add('msel');
 }
 //Game로 이동
 function goGame (){
-    const ifrm = document.getElementById("lm");
-    const ifw = ifrm.contentWindow;
-    const ifd = ifrm.contentDocument;
-
-    ifd.querySelector(".f").classList.add('sel');
-
-    document.querySelector('#maintitle p').innerText = "Game";
+    lmSel();
+    upText("Game");
     document.querySelector(".pa").classList.add('sel');
     document.querySelector("#menubar_logo li").classList.remove('msel');
     document.querySelector(".msevl").classList.add('msel');
