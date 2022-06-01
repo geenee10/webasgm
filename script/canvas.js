@@ -103,11 +103,25 @@ function changePw(){
 	context.lineWidth = wid;
 }
 //지우기
-function clr(){
+function clrr(){
 	canvas = document.getElementById("canvas");
 	context = canvas.getContext("2d");
 
 	context.clearRect(0, 0, canvas.width, canvas.height);
+}
+//지우기 검사
+function clr(){
+	if(context.getImageData(0, 0, canvas.width, canvas.height).data.some(channel => channel !== 0)){
+		var x = confirm("현재 작성중인 내용이 있습니다. 저장하시겠습니까?");
+		if(x){
+			alert("저장되었습니다.");
+			clrr();
+		} else {
+			clrr();
+		}
+	} else {
+		clrr();
+	}
 }
 //도형 그리기
 function drawShape(){
@@ -163,4 +177,49 @@ function drawShape(){
 		}
 
 	
+}
+//도형기록 1번
+function rem1(){
+	clr();
+	
+	canvas = document.getElementById("canvas");
+	context = canvas.getContext("2d");
+
+	context.beginPath(); // 빈 경로 구성
+	for(var i=0; i<11; i++) {
+		context.rect(10+i*35,10+i*35, 50,50);
+		context.rect(360-i*35,10+i*35, 50,50);
+	}
+	context.strokeStyle="white";
+	context.stroke();
+}
+//도형기록 2번
+function rem2(){
+	clr();
+	
+	canvas = document.getElementById("canvas");
+	context = canvas.getContext("2d");
+	context.strokeStyle="blue";
+	for(var i = 0; i < 5; i++){
+		context.beginPath();
+	context.arc(100 + i * 50, i % 2 == 0 ? 200 : 250, 50, 0, Math.PI * 2, true);
+	context.lineWidth = "4";
+	context.stroke();
+	switch (i){
+		case 0:
+			context.strokeStyle="yellow";
+			break;
+		case 1:
+			context.strokeStyle="black";
+			break;
+		case 2:
+			context.strokeStyle="green";
+			break;
+		case 3:
+			context.strokeStyle="red";
+			break;
+		default :
+			break;
+	}
+	}
 }

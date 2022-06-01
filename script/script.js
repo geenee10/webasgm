@@ -15,6 +15,32 @@ function clk () {
 function upText(ths){
     document.querySelector('#maintitle p').innerText = ths;
 }
+//canvas 기록 저장유무
+function canvasRem(){
+    const ifrm = document.getElementById("rm");
+    const ifw = ifrm.contentWindow;
+    const ifd = ifrm.contentDocument;
+    if (document.getElementById("rm").src == "canvas.html"){
+
+
+        canvas = ifd.getElementById("canvas");
+	    context = document.getContext("2d");
+
+	    
+        if(context.getImageData(0, 0, canvas.width, canvas.height).data.some(channel => channel !== 0)){
+            var x = confirm("현재 작성중인 내용이 있습니다. 저장하시겠습니까?");
+            if(x){
+                alert("저장되었습니다.");
+                context.clearRect(0, 0, canvas.width, canvas.height);
+            } else {
+                context.clearRect(0, 0, canvas.width, canvas.height);
+            }
+        } else {
+            context.clearRect(0, 0, canvas.width, canvas.height);
+        }
+    }
+    
+}
 //좌측메뉴선택 함수
 function lmSel(ths){
     const ifrm = document.getElementById("lm");
@@ -100,6 +126,7 @@ function goMap (){
     lmSel(3);
     upText("Map");
     tmSel(4);
+    canvasRem()
 }
 //대시보드(홈)로 이동
 function goMain (){
