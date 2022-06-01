@@ -4,6 +4,7 @@ function init() {
 	context = canvas.getContext("2d");
 	
 	context.lineWidth = 2; // 선 굵기를 2로 설정
+	changePc();
 	context.strokeStyle = "white";
 
 	// 마우스 리스너 등록. e는 MouseEvent 객체
@@ -33,3 +34,16 @@ function move(e) {
 	startX = curX; startY = curY;
 }
 function out(e) { drawing = false; }
+
+//배경색 변경
+function changeBg(){
+	var color = document.getElementById("bgc").value;
+	var bg = document.getElementById("canvas");
+
+	bg.style.backgroundColor = color;
+}
+//펜 색 변경
+function changePc(){
+	var color = document.getElementById("pc").value;
+	context.strokeStyle = color;
+}
