@@ -20,7 +20,10 @@ function lmSel(ths){
     const ifrm = document.getElementById("lm");
     const ifw = ifrm.contentWindow;
     const ifd = ifrm.contentDocument;
-    
+    var a = ifd.getElementsByClassName("men");
+    for(var i = 0; i < a.length; i++){
+        a[i].classList.remove('sel');
+    }
     switch(ths){
         case 1 :
             ifd.querySelector(".f").classList.add('sel');
@@ -37,29 +40,47 @@ function lmSel(ths){
 }
 //상단메뉴(상위) 선택 함수
 function tmSel(ths){
+    var a = document.getElementsByClassName("m");
+    var b = document.getElementsByClassName("menut");
+    for(var i = 0; i < a.length; i++){
+        a[i].classList.remove('msel');
+    }
+    for(var i = 0; i < b.length; i++){
+        b[i].classList.remove('sel');
+    }
+    
     switch(ths){
         case 1 :
-            document.querySelector(".mfl").classList.add('msel');
+            var x = document.querySelector(".mfl");
+            var y = document.querySelector(".dsh");
             break;
         case 2 :
-            document.querySelector(".msl").classList.add('msel');
+            var x = document.querySelector(".msl");
+            var y = document.querySelector(".dsh");
             break;
         case 3 :
-            document.querySelector(".mtl").classList.add('msel');
+            var x = document.querySelector(".mtl");
+            var y = document.querySelector(".n");
             break;
         case 4 :
-            document.querySelector(".mfol").classList.add('msel');
+            var x = document.querySelector(".mfol");
+            var y = document.querySelector(".pa");
             break;
         case 5 :
-            document.querySelector(".mfil").classList.add('msel');
+            var x = document.querySelector(".mfil");
+            var y = document.querySelector(".pa");
             break;
         case 6 :
-            document.querySelector(".msil").classList.add('msel');
+            var x = document.querySelector(".msil");
+            var y = document.querySelector(".pa");
             break;
         case 7 :
-            document.querySelector(".msevl").classList.add('msel');
+            var x = document.querySelector(".msevl");
+            var y = document.querySelector(".pa");
             break;
     }
+    y.classList.add('sel');
+    x.classList.add('msel');
 }
 function goMenubar (){
     document.getElementById("submenubar").style.width ="80%";
@@ -78,55 +99,41 @@ function goBack(){
 function goMap (){
     lmSel(3);
     upText("Map");
-    document.querySelector(".pa").classList.add('sel');
-    document.querySelector("#menubar_logo li").classList.remove('msel');
-    tmSel(3);
+    tmSel(4);
 }
 //대시보드(홈)로 이동
 function goMain (){
     lmSel(1);
     upText("Main");
-    document.querySelector(".dsh").classList.add('sel');
-    document.querySelector("#menubar_logo li").classList.remove('msel');
-    document.querySelector(".mfl").classList.add('msel');
+    tmSel(1);
 }
 //공지사항으로 이동
 function goNotice (){
     lmSel(1);
     upText("Notice");
-    document.querySelector(".n").classList.add('sel');
-    document.querySelector("#menubar_logo li").classList.remove('msel');
-    document.querySelector(".mtl").classList.add('msel');
+    tmSel(3);
 }
 //canvas로 이동
 function goCanvas (){
     lmSel(3);
     upText("Canvas");
-    document.querySelector(".dsh").classList.add('sel');
-    document.querySelector("#menubar_logo li").classList.remove('msel');
-    document.querySelector(".msil").classList.add('msel');
+    tmSel(6);
 }
 //Product로 이동
 function goProduct (){
     lmSel(2);
     upText("Product");
-    document.querySelector("x.dsh").classList.add('sel');
-    document.querySelector("#menubar_logo li").classList.remove('msel');
-    document.querySelector(".msl").classList.add('msel');
+    tmSel(2);
 }
 //Media로 이동
 function goMedia (){
     lmSel();
     upText("Education");
-    document.querySelector(".pa").classList.add('sel');
-    document.querySelector("#menubar_logo li").classList.remove('msel');
-    document.querySelector(".mfil").classList.add('msel');
+    tmSel(5);
 }
 //Game로 이동
 function goGame (){
     lmSel();
     upText("Game");
-    document.querySelector(".pa").classList.add('sel');
-    document.querySelector("#menubar_logo li").classList.remove('msel');
-    document.querySelector(".msevl").classList.add('msel');
+    tmSel(7);
 }

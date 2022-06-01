@@ -1,9 +1,4 @@
-body{
-    -ms-overflow-style: none;
-}
-::-webkit-scrollbar {
-    display: none;
-}
+
 .sel{
     color: rgba(86, 86, 222);
 }
@@ -12,7 +7,6 @@ body{
     height: 100%;
     background-color: #fff;
     border-radius: 1ex;
-    margin-top: 40px;
     box-sizing: border-box;
     padding: 40px;
 }

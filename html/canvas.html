@@ -3,12 +3,19 @@
 <head>
     <meta charset="UTF-8">
     <link href="../css/canvas.css" rel="stylesheet">
+    <link href="../css/rm.css" rel="stylesheet">
 </head>
-<body>
-    <div>
-        <p>셀러 노트</p>
-        <canvas id="canvas" width="600px" height="600px">
+<body onload="init()">
+    <div id="maincanvas">
+        <p class="selnot">셀러 노트</p>
+        <canvas id="canvas" width="600px" height="600px" >
         </canvas>
+    </div>
+    <div id="ctrl">
+        <div class="bg">
+            <p>배경 설정</p>
+            <input type="color" value="white">
+        </div>
     </div>
     <script src="../script/canvas.js"></script>
 </body>

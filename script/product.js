@@ -10,3 +10,7 @@ function cbsel (){
         }
     }
 }
+//상품 수정 시 알림창
+function al(){
+    var x = alert("상품이 수정되었습니다.");
+}
