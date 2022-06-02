@@ -24,6 +24,15 @@ h3:hover ~#hint{
     box-sizing: border-box;
     padding: 20px;
 }
+#t{
+    margin-top: 24px;
+    margin-bottom: 64px;
+    text-align: center;
+    width: 100%;
+    height: 30px;
+    font-weight: 600;
+    font-size: 24px;
+}
 #ev{
     width: 800px;
     height: 800px;
@@ -37,6 +46,64 @@ h3:hover ~#hint{
     margin-left: 0;
     width: 161px;
     height: 160px;
-    background-color: green;
-    margin-bottom: 40px;
+    margin: 0;
+}
+.pBox img{
+    width: 100%;
+}
+#show, #sh{
+    display: none;
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+}
+#bbg{
+    position: absolute;
+    z-index: 0;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+#wbg{
+    z-index: 1;
+    position: absolute;
+    width: 500px;
+    height: 500px;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #fff;
+    margin: 0 auto;
+    text-align: center;
+    border-radius: 25px;
+}
+.c{
+    margin-top: 160px;
+    margin-bottom: 16px;
+}
+.pt{
+    
+    font-size: 32px;
+    font-weight: 600;
+}
+#wbg button{
+    margin-top: 84px;
+    width: 240px;
+    height: 64px;
+    font-size: 24px;
+    font-weight: 600;
+    border-radius: 25px;
+    background-color: rgba(86, 86, 222);
+    color: #fff;
+}
+.cntc{
+    margin-top: 40px;
+    width: 300px;
+    height: 36px;
+    color: rgba(180, 180, 180);
+    white-space: pre-wrap;
 }

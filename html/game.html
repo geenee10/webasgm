@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <link href="../css/style.css" rel="stylesheet" type="text/css">
     <link href="../css/game.css" rel="stylesheet" type="text/css">
+    <script src="../script/game.js"></script>
 </head>
 <body>
     <div id="bg">
@@ -13,55 +14,76 @@
             <h4>셀러님들을 위한 작은 선물</h4><br>
             <p>선물 상자를 열어 선물을 확인하세요!</p>
         </div>
+        <p id="t"><span style="color: rgba(86, 86, 222)">[판매자의 날]</span> 이벤트!<br>상자를 선택해주세요!
+        </p>
         <div id="ev">
             <div class="pBox">
+                <img src="../img/present_box.png" onclick="opn(this)">
+            </div>
+            <div class="pBox">
+                <img src="../img/present_box.png" onclick="opn(this)">
+            </div>
+            <div class="pBox">
+                <img src="../img/present_box.png" onclick="opn(this)">
+            </div>
+            <div class="pBox">
+                <img src="../img/present_box.png" onclick="opn(this)">
+            </div>
+            <div class="pBox">
+                <img src="../img/present_box.png" onclick="opn(this)">
+            </div>
+            <div class="pBox">
+                <img src="../img/present_box.png" onclick="opn(this)">
+            </div>
+            <div class="pBox">
+                <img src="../img/present_box.png" onclick="opn(this)">
+            </div>
+            <div class="pBox">
+                <img src="../img/present_box.png" onclick="opn(this)">
+            </div>
+            <div class="pBox">
+                <img src="../img/present_box.png" onclick="opn(this)">
+            </div>
+            <div class="pBox">
+                <img src="../img/present_box.png" onclick="opn(this)">
+            </div>
+            <div class="pBox">
+                <img src="../img/present_box.png" onclick="opn(this)">
+            </div>
+            <div class="pBox">
+                <img src="../img/present_box.png" onclick="opn(this)">
+            </div>
+            <div class="pBox">
+                <img src="../img/present_box.png" onclick="opn(this)">
+            </div>
+            <div class="pBox">
+                <img src="../img/present_box.png" onclick="opn(this)">
+            </div>
+            <div class="pBox">
+                <img src="../img/present_box.png" onclick="opn(this)">
+            </div>
+            <div class="pBox">
+                <img src="../img/present_box.png" onclick="opn(this)">
+            </div>
+        </div>
+        <div id="show">
+            <div id="wbg">
+                <p class="c">축! 당첨!</p>
+                <p class="pt">상품 광고 쿠폰 7일</p>
+                <button onclick="cls()">확인하기 ></button>
+                <p class="cntc">당첨된 쿠폰은 30일 이내로 사용 가능하며, 사용하지 않을 시 자동 삭제됩니다.</p>
                 
             </div>
-            <div class="pBox">
-
+            <div id="bbg" onclick="cls()"></div>
+        </div>
+        <div id="sh">
+            <div id="wbg">
+                <p class="c">다음 기회에..</p>
+                <p class="pt">꽝</p>
+                <p class="cntc">다음 이벤트에 참여해주세요.</p>
+                
             </div>
-            <div class="pBox">
-
-            </div>
-            <div class="pBox">
-
-            </div>
-            <div class="pBox">
-
-            </div>
-            <div class="pBox">
-
-            </div>
-            <div class="pBox">
-
-            </div>
-            <div class="pBox">
-
-            </div>
-            <div class="pBox">
-
-            </div>
-            <div class="pBox">
-
-            </div>
-            <div class="pBox">
-
-            </div>
-            <div class="pBox">
-
-            </div>
-            <div class="pBox">
-
-            </div>
-            <div class="pBox">
-
-            </div>
-            <div class="pBox">
-
-            </div>
-            <div class="pBox">
-
-            </div>
+            <div id="bbg" onclick="cls()"></div>
         </div>
     </div>
 </body>
