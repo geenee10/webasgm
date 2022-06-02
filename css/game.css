@@ -47,6 +47,14 @@ h3:hover ~#hint{
     width: 161px;
     height: 160px;
     margin: 0;
+    cursor: pointer;
+}
+.pBox:hover > img{
+    width: 80%;
+    margin-left: 50%;
+    margin-top: 50%;
+    transform: translate(-50%, -50%);
+    opacity: 0.6;
 }
 .pBox img{
     width: 100%;
