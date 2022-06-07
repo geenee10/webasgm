@@ -5,6 +5,21 @@
     <link href="../css/style.css" rel="stylesheet" type="text/css">
     <link href="../css/login.css" rel="stylesheet" type="text/css">
     <link href="../css/signup.css" rel="stylesheet" type="text/css">
+    <script>
+        function bl () {
+            var p = document.getElementById("su_pw");
+            var c = document.getElementById("su_pwag");
+            var b = document.getElementById("bll");
+
+            if(p.value == c.value){
+                b.innerText = "일치";
+                b.style.color = "green";
+            } else {
+                b.innerText = "불일치";
+                b.style.color = "red";
+            }
+        }
+    </script>
 </head>
 <body>
     <form id="signup">
@@ -20,12 +35,12 @@
         <div class="su_div">
             <label for="su_pw">비밀번호</label>
         </div>
-        <input type="password" placeholder="8글자 이상" id="su_pw" class="big_button ip" required>
+        <input type="password" onchange="bl()" placeholder="8글자 이상" minlength="8" id="su_pw" class="big_button ip" required>
         <!-- 비밀번호 재확인입력 영역 -->
         <div class="su_div">
-            <label for="su_pwag">비밀번호 재확인</label>
+            <label for="su_pwag">비밀번호 재확인</label><span id="bll" style="color: red; font-size: 12px; margin-left: 8px;"></span>
         </div>
-        <input type="password" placeholder="비밀번호를 다시입력해주세요." id="su_pwag" class="big_button ip" required>
+        <input type="password" onchange="bl()" placeholder="비밀번호를 다시입력해주세요." minlength="8" id="su_pwag" class="big_button ip" required>
         <!-- 이름입력 영역 -->
         <div class="su_div">
             <label for="su_name">이름</label>
