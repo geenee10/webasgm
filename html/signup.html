@@ -19,6 +19,17 @@
                 b.style.color = "red";
             }
         }
+        function ent(){
+            var pw = document.getElementById("su_pw");
+            var c = document.getElementById("su_pwag");
+
+            if(pw.value.length < 8){
+                alert("비밀번호를 8글자 이상 작성해주세요");
+            }
+            if(pw.value != c.value){
+                alert("입력하신 두개의 비밀번호가 서로 같지 않습니다.");
+            }
+        }
     </script>
 </head>
 <body>
@@ -72,7 +83,7 @@
         
 
 
-        <input type="submit" value="입점하기" id="su_signup" class="big_button">
+        <input type="submit" value="입점하기" id="su_signup" onclick="ent()" class="big_button">
     </form>
 </body>
 <footer>
