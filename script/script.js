@@ -169,3 +169,11 @@ function goGame (){
     upText("Game");
     tmSel(7);
 }
+//우측 콘텐츠 높이
+function rmh (){
+    const ifrm = document.getElementById("rm");
+    const ifw = ifrm.contentWindow;
+    const ifd = ifrm.contentDocument;
+
+    
+}

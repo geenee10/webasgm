@@ -1,5 +1,4 @@
 body{
-
     box-sizing: border-box;
     width: 100%;
     overflow: hidden;
@@ -11,10 +10,15 @@ body{
 .green{
     color: green;
 }
-#fline{
-    height: 375px;
+#contents{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: px;
+    height: 800px;
 }
 .oto{
+    border: 1px solid red;
     width: 375px;
     height: 375px;
     background-color: #fff;
