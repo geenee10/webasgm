@@ -14,18 +14,25 @@ body{
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    width: px;
+    justify-content: space-between;
+    align-content: space-between;;
     height: 800px;
 }
-.oto{
+.contents > div{
     border: 1px solid red;
+    margin-bottom: 20px !important;
+}
+.oto, .ott{
+    border: 1px solid red;
+    margin-left: 0;
+    margin-right: 0 !important;
+    flex-basis: auto;
+}
+.oto{
     width: 375px;
     height: 375px;
     background-color: #fff;
     border-radius: 25px;
-    float: left;
-    margin-right: 20px;
-    margin-bottom: 20px;
 }
 .oto_title{
     width: 375px;
@@ -61,13 +68,11 @@ body{
     margin-top: 24px;
 }
 .ott{
-    width: 770px;
+    width: 48%;
+    min-width: 750px;
     height: 375px;
     background-color: #fff;
     border-radius: 25px;
-    float: left;
-    margin-right: 20px;
-    margin-bottom: 20px;
 }
 .ott .oto_item_right{
     font-size: 24px;

@@ -302,6 +302,11 @@ header{
 iframe{
     border: none;
 }
+#contents{
+    display: flex;
+    flex-grow: 1;
+    justify-content: space-between;
+}
 #lm{
     z-index: 3;
     border-radius: 0px 50px 0px 0px;
@@ -326,7 +331,7 @@ iframe{
     box-sizing: border-box;
     padding-left: 320px;
     width: 100%;
-    height: auto;
+    height: 100vh;
     padding-top: 40px;
     padding-right: 40px;
 }
