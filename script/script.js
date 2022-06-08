@@ -175,7 +175,6 @@ function rmh (){
     const ifrm = document.getElementById("rm");
     const ifd = ifrm.contentDocument;
 
-    ifrm.height = ifd.body.scrollHeight + 80;
+    ifrm.height = ifd.body.scrollHeight + 164;
     lm.height = "100vh";
-    
 }
