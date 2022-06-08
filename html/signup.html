@@ -22,18 +22,22 @@
         function ent(){
             var pw = document.getElementById("su_pw");
             var c = document.getElementById("su_pwag");
+            var t = document.getElementById("su_name");
 
             if(pw.value.length < 8){
                 alert("비밀번호를 8글자 이상 작성해주세요");
-            }
-            if(pw.value != c.value){
+            } else if(pw.value != c.value){
                 alert("입력하신 두개의 비밀번호가 서로 같지 않습니다.");
+            } else if(t > 0 || t < 0){
+                alert("입력하신 전화번호가 올바르지 않습니다.");
+            } else {
+                location.replace("../index.html");
             }
         }
     </script>
 </head>
 <body>
-    <form id="signup">
+    <form id="signup" onsubmit="return false">
         <div id="logo">
             <a href="../index.html"><img src="../img/logo_blue.gif" alt="로고"></a>
         </div>
@@ -63,7 +67,7 @@
         </div>
         <input type="tel" placeholder="010-0000-0000" id="su_pn" class="big_button ip" maxlength="11" required>
         <button>인증번호 전송</button>
-        <input type="text" placeholder="인증번호" id="su_vif" class="big_button ip" required>
+        <input type="text" placeholder="인증번호" id="su_vif" minlength="10" class="big_button ip" required>
         <!-- 이메일입력 영역 -->
         <div class="su_div">
             <label for="su_email">이메일</label>
