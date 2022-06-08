@@ -1,3 +1,6 @@
+body{
+    min-height: 600px;
+}
 .green{
     color: green;
 }
@@ -61,6 +64,7 @@ ul li{
     text-align: center;
     background-color: rgba(86, 86, 222);
     color: #fff;
+    margin-bottom: 20px;
 }
 @media screen and (max-width: 1126px){
 }

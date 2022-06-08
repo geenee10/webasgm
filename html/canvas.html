@@ -30,7 +30,8 @@
         </div>
         <div class="pw">
             <p>펜 두께 변경</p>
-            <input id="pw" type="number" value="2" onchange="changePw()">
+            <input id="pw" type="range" value="2" min="1" step="5" max="50" onchange="changePw()" oninput="changePw()">
+            <span id="pw_value" style="font-weight: 600">2</span>
         </div>
         <div class="clr">
             <div class="shch">

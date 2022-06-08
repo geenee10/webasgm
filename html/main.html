@@ -6,7 +6,7 @@
     <link href="../css/style.css" rel="stylesheet" type="text/css">
     <link href="../css/main.css" rel="stylesheet" type="text/css">
 </head>
-<body>
+<body onresize="rmh()">
     <header>
         <a href="javascript:goMenubar()">
             <div id="menubar">
@@ -35,12 +35,14 @@
         <div id="maintitle">
             <p>Main</p>
         </div>
-        <div id="user">
-            <div class="pro">
-                <div class="profile"></div>
+        <a href="../index.html">
+            <div id="user">
+                <div class="pro">
+                    <div class="profile"></div>
+                </div>
+                <div class="cName">DongyangMirae<br>판매자님 반갑습니다!</div>
             </div>
-            <div class="cName"><a href="">DongyangMirae</a><br>판매자님 반갑습니다!</div>
-        </div>
+        </a>
         <div id="line">
 
         </div>
@@ -71,7 +73,7 @@
         <iframe id="lm" name="lm" src="menu.html">
         </iframe>
         <div id="lmbg"></div>
-        <iframe id="rm" name="rm" src="dashboard.html">
+        <iframe id="rm" name="rm" src="dashboard.html" onload="rmh()">
         </iframe>
     </div>
 </body>

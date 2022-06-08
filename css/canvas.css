@@ -3,7 +3,6 @@ body{
     overflow: hidden;
 }
 #maincanvas{
-    position: absolute;
     max-width: 600px;
     max-height: 644px;
     width: 100%;
@@ -58,6 +57,7 @@ body{
     padding: 20px;
     position: absolute;
     left: 620px;
+    top: 0;
     background-color: #fff;
     width: 150px;
     border-radius: 25px;

@@ -100,7 +100,10 @@ function changePc(){
 //펜 두께 변경
 function changePw(){
 	var wid = document.getElementById("pw").value;
+	var pv = document.getElementById("pw_value");
+
 	context.lineWidth = wid;
+	pv.innerText = wid;
 }
 //지우기
 function clrr(){

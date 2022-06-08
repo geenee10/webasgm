@@ -1,8 +1,11 @@
+body{
+    min-height: 600px;
+}
 #bg{
+    float: left;
     padding: 20px;
     box-sizing: border-box;
     width: 100%;
-    position: absolute;
     background-color: #fff;
     border-radius: 25px;
     max-width: 600px;

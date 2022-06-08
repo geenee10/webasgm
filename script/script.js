@@ -171,9 +171,11 @@ function goGame (){
 }
 //우측 콘텐츠 높이
 function rmh (){
+    const lm = document.getElementById("lm");
     const ifrm = document.getElementById("rm");
-    const ifw = ifrm.contentWindow;
     const ifd = ifrm.contentDocument;
 
+    ifrm.height = ifd.body.scrollHeight + 80;
+    lm.height = "100vh";
     
 }
