@@ -1,0 +1,22 @@
+#contents{
+    float: left;
+    width: 600px;
+    height: 600px;
+    border-radius: 25px;
+    background-color: #fff;
+    padding: 20px;
+}
+label[id="contents"]{
+    height: 24px;
+}
+#subj{
+    width: 90%;
+    height: 24px;
+    resize: none;
+    font-size: 18px;
+}
+#in{
+    width: 94%;
+    height: 500px;
+    font-size: 18px;
+}
